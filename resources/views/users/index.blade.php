@@ -6,7 +6,7 @@
             <div class="pull-left">
                 <h2>Users Management</h2>
             </div>
-            <div class="pull-right">
+            <div class="pull-right mb-3">
                 <a class="btn btn-success" href="{{ route('users.create') }}"> Create New User</a>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <td>
                     @if (!empty($user->getRoleNames()))
                         @foreach ($user->getRoleNames() as $v)
-                            <label class="badge badge-success">{{ $v }}</label>
+                            <label>{{ $v }}</label>
                         @endforeach
                     @endif
                 </td>
