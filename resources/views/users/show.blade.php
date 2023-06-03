@@ -6,7 +6,7 @@
             <div class="pull-left">
                 <h2> Show User</h2>
             </div>
-            <div class="pull-right">
+            <div class="pull-right mb-2">
                 <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
             </div>
         </div>
@@ -31,7 +31,7 @@
                 <strong>Roles:</strong>
                 @if (!empty($user->getRoleNames()))
                     @foreach ($user->getRoleNames() as $v)
-                        <label class="badge badge-success">{{ $v }}</label>
+                        <label>{{ $v }}</label>
                     @endforeach
                 @endif
             </div>
