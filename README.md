@@ -33,17 +33,37 @@ Below is the list of users that are assigned to different roles.
      
  <img src="/public/images/admin-roles.png" width="80%" height="80%" />
  
- as an example,the user is logged in as `Admin` since the role `Admin` can list, create, edit, and delete roles, of course it can access the role management page.
+ As an example,the user is logged in as `Admin` since the role `Admin` can list, create, edit, and delete roles, of course it can access the role management page.
  
  <img src="/public/images/admin-access-roles.png" width="80%" height="80%" />
  
       SELLER ROLE
- <img src="/public/images/seller.png" width="80%" height="80%" />  
- 
- Below is an interface when the role `Seller` tries to access role management page. Since the role only have a feauture to list role the Show button will onlu be available.
+      
+<img src="/public/images/seller.png" width="80%" height="80%" />  
 
+Below is an interface when the role `Seller` tries to access role management page. the user is logged in as `Seller` since the role only have a feauture to list role the Show button will only be available.
+
+<img src="/public/images/seller-acces-roles.png" width="80%" height="80%" /> 
+
+     BUYER ROLE
+     
+<img src="/public/images/buyer.png" width="80%" height="80%" />
+
+As an example the user is logged in as `Buyer`, that means it can only list products. Here is an example when `Buyer` tries to acces roles management page.
+
+<img src="/public/images/seller-access-roles.png" width="80%" height="80%" />
+
+It will give a 403 status code.
+
+But `Buyer` are able to list products. Below is an example:
+
+<img src="/public/images/Screenshot 2023-06-07 111133.png" width="80%" height="80%" />
+
+
+     
 -----
 
 ***Controllers, Middleware, and additional libraries used* and their respective functions**
+
 -----
 **DB, external interfaces: database table structure used.**
