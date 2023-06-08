@@ -113,3 +113,75 @@ This middleware functions as authorization for roles, permission, and both.
 
 -----
 **DB, external interfaces: database table structure used.**
+
+**Database**
+
+This project have several table such as `users` table, `roles` table, `products` table, `permissions` table, `roles_has_permissions` table, '`model_has_roles`table, and `model_has_permissions` table. 
+
+> user table
+
+The user table has 7 coulumns which consist of:
+
+<img src="public/images/users-table.png" width="50%" height="50%" />
+
+> roles table
+
+The roles table has 5 coulumns which consist of:
+
+<img src="public/images/roles-table.png" width="50%" height="50%" />
+
+> products table
+
+The product table has 5 coulumns which consist of:
+
+<img src="public/images/product-table.png" width="50%" height="50%" />
+
+> permissions table
+
+The permissions table has 5 coulumns which consist of:
+
+<img src="public/images/permissions-table.png" width="50%" height="50%" />
+
+> roles_has_permissions table
+
+The roles_has_permissions table has 2 coulumns which consist of:
+
+<img src="public/images/roles_has_permissions-table.png" width="50%" height="50%" />
+
+In this case the `role_id` is a foreign key from role_id in permissions table. 
+
+> model_has_roles table
+
+The model_has_roles table table has 3 coulumns which consist of:
+
+<img src="public/images/model_has_roles-table.png" width="50%" height="50%" />
+
+> model_has_permissions table
+
+The model_has_permissions table table has 3 coulumns which consist of:
+
+<img src="public/images/model_has_permissions-table.png" width="50%" height="50%" />
+
+**External Interface**
+
+> Data Access Interface 
+
+-> This is the database that has been mentioned before.
+
+> User Interfaces
+
+-> This is the views which is located in the resources folder. This project consist of many different view including:
+
+- Theme Layout which is the `app.blade.php`.
+
+- User Module which are `index.blade.php`, `create.blade.php`, `edit.blade.php`, and `show.blade.php`
+
+- Roles Module which are `index.blade.php`, `create.blade.php`, `edit.blade.php`, and `show.blade.php`
+
+- Product Module which are `index.blade.php`, `create.blade.php`, `edit.blade.php`, and `show.blade.php`
+
+
+
+
+
+
