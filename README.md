@@ -67,7 +67,7 @@ But `Buyer` are able to list products. Below is an example:
 
 There are 4 controllers in this project which are `HomeController`, `ProductController`, `RoleController`, and `UserController`. 
 
-<img src="public/images/Controller.png" width="80%" height="80%" />
+<img src="public/images/controller.png" width="80%" height="80%" />
 
 > HomeController
 
